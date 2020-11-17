@@ -404,6 +404,7 @@
                     http = null;
                 };
                 http.open("GET", img.src, true);
+                http.setRequestHeader("Access-Control-Request-Method", "GET")
                 http.responseType = "arraybuffer";
                 http.send(null);
             }
